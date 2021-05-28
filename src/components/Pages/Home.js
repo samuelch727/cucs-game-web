@@ -4,6 +4,7 @@ import DayBlock from "../dayBlock";
 import data from "../../Data";
 import Banner from "../banner";
 import ContentBlock from "../contentBlock"
+import Foot from "../foot"
 
 function Home() {
   return (
@@ -23,6 +24,10 @@ function Home() {
       {data.games.map((content, index) => {
         return <DayBlock {...content} key={index} />;
       })}
+      {data.content.map((content, index) => {
+        return <ContentBlock {...content} key={index} />
+      })}
+      <Foot/>
     </div>
   );
 }

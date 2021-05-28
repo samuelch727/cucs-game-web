@@ -4,7 +4,7 @@ import EventBlock from "./eventBlock";
 function dayBlock({ day, games, date }) {
   return (
     <div style={{ backgroundColor: "#162244" }}>
-      <div className="container" >
+      <div className="container" style={{paddingTop:"20px", paddingBottom:"20px"}}>
         <div className="d-flex justify-content-center">
           <h1 style={{ fontSize: "50px", margin: "20px", color:"#DDA862" }}>Day {day}</h1>
         </div>
